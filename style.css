@@ -14,7 +14,8 @@ html,body{
     padding:0 10px;
 }
 .header{
-    position:fixed;
+    display:block;
+    position: relative;
     width: 100%;
     top:0;
     left:0;
@@ -74,6 +75,14 @@ html,body{
     font-size: 18px;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
 @media (max-width:767px){
     .header__body{
         height:50px;
@@ -97,6 +106,7 @@ html,body{
         height: 2px;
         top: 9px;
         transition: all 0.3s ease 0s;
+        cursor: pointer;
     }
     .header__burger:before,
     .header__burger:after{
@@ -152,4 +162,52 @@ html,body{
     body.lock{
         overflow: hidden;
     }
+}
+
+ 
+/* The side navigation menu */
+.page{
+    display:flex;
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    height:630px;
+    border-right:1px solid #D7DBDD;
+    background-color: #FCFDFD;
+    padding:10px;
+}
+ 
+.sidebar__item{
+    cursor:pointer;
+    padding:8px 10px;
+    font-size:18px;
+}
+.sidebar__item .btn-sidebar:hover{
+    background-color: #4CAF50;
+    color:white;
+    border-radius:4px;
+}
+.sidebar button{
+    color:black;
+}
+.btn{
+    display: flex;
+    justify-content: flex-start;
+    cursor:pointer;
+    outline: none;
+    border:none;
+    color:black;
+    width:100%;
+}
+.btn-sidebar{
+    background-color: #C4C4C4;
+    padding:10px;
+}
+.content{
+    display:block;
+    padding:10px;
+    width:90%;
 }
