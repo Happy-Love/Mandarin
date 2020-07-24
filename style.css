@@ -20,6 +20,7 @@ html,body{
     top:0;
     left:0;
     z-index: 50;
+    border-bottom:1px solid black;
 }
 .header:before{
     content:'';
@@ -93,9 +94,10 @@ html,body{
     .header__burger{
         display:block;
         position: relative;
+        margin-left: auto;
         width:30px;
         height:20px;
-        position:relative;
+         
         z-index: 3;
     }
     .header__burger span{
@@ -179,7 +181,9 @@ html,body{
     background-color: #FCFDFD;
     padding:10px;
 }
- 
+.sidebar__section{
+
+}
 .sidebar__item{
     cursor:pointer;
     padding:8px 10px;
@@ -194,8 +198,7 @@ html,body{
     color:black;
 }
 .btn{
-    display: flex;
-    justify-content: flex-start;
+   
     cursor:pointer;
     outline: none;
     border:none;
@@ -203,11 +206,22 @@ html,body{
     width:100%;
 }
 .btn-sidebar{
+    display: flex;
+    justify-content: flex-start;
     background-color: #C4C4C4;
     padding:10px;
 }
 .content{
-    display:block;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
     padding:10px;
     width:90%;
+    background-color: #ffc8002c ;
+}
+.content__section{
+
+}
+.content__item{
+
 }
