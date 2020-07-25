@@ -6,7 +6,9 @@
 }
 html,body{
     height:100%;
- 
+    
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 .container{
     max-width:100%;
@@ -37,7 +39,7 @@ html,body{
     position: relative;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 50px;
 }
 .header__brand{
     display:flex;
@@ -48,7 +50,7 @@ html,body{
     margin-left:10px;
 }
 .header__logo{
-    flex: 0 0 60px;
+    flex: 0 0 40px;
     overflow: hidden;
     position:relative;
 }
@@ -84,6 +86,187 @@ html,body{
 
 
 
+
+
+ 
+/* The side navigation menu */
+.page{
+    display:flex;
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    height:630px;
+    border-right:1px solid #D7DBDD;
+    background-color: #FCFDFD;
+    padding:10px;
+}
+.sidebar__section{
+
+}
+.sidebar__item{
+    cursor:pointer;
+    padding:8px 10px;
+    font-size:18px;
+}
+.sidebar__item .btn-sidebar:hover{
+    background-color: #4CAF50;
+    color:white;
+    border-radius:4px;
+}
+ 
+.sidebar button{
+    color:black;
+}
+.btn{
+   
+    cursor:pointer;
+    outline: none;
+    border:none;
+    color:black;
+    width:100%;
+}
+.btn-sidebar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #C4C4C4;
+    padding:10px;
+    
+    position:relative;
+}
+.btn-sidebar img{
+     
+    display:inline-block;
+     
+    border-radius:50%;
+    width:40px;
+    height:40px;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    padding:10px;
+    width:100%;
+    background-color: #ffc8002c ;
+}
+.content__section{
+
+}
+.content__item {
+    
+}
+.posts__body{
+    position:relative;
+    background-color:#ACA9A9;
+    width:80%;
+    max-width:1920px;
+    max-height:1940px;
+    margin:auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.post__title{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:10px;
+    border-bottom: 1px solid black;
+}
+.post__title__link{
+    display:block;
+    position:relative;
+    text-decoration: none;
+    color:black;
+    white-space: nowrap;
+     
+}
+.post__title__link img{
+    display: inline-block;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    vertical-align: middle;
+    
+}
+.post__title__link span{
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+.post__photo{
+    display: block;
+    position: relative;
+    
+}
+.post__photo img{
+   width:100%;
+   vertical-align: middle;
+}
+.post__footer{
+    
+}
+.post__footer__item{
+    display:flex;
+    flex-wrap: wrap;
+     
+}
+.btn__post__footer{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    border-left:1px solid #adb0b3;
+    border-radius:6px ;
+    transition: all 0.3s ease 0s;
+    margin-left:10px;
+    
+}
+.btn__post__footer:first-child{
+    background-color:none;
+    border: none;
+    margin:0px;
+}
+ 
+.btn__post__footer:hover{
+    background-color:#2D8CFF;
+    color:white;
+    border: none;
+}
+
+.btn__wrapper{
+    display:flex;
+    flex:1 0;
+    padding:10px;
+}
+.m_icon::before{
+    display:inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size:14px;
+    margin-right:5px;
+}
+
+.m_friends::before{
+    content:'\f0c0';
+}
+.m_messages::before{
+    content: '\f27a';
+}
+.m_bell::before{
+    content: '\f0a2';
+}
+.m_comment::before{
+    content: '\f0e5';
+}
+.m_heart::before{
+    content: '\f08a';
+}
+.m_share_alt::before{
+    content: '\f1e0'; 
+}
 @media (max-width:767px){
     .header{
          
@@ -166,142 +349,13 @@ html,body{
     body.lock{
         overflow: hidden;
     }
-}
-
- 
-/* The side navigation menu */
-.page{
-    display:flex;
-}
-.sidebar{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 450px;
-    height:630px;
-    border-right:1px solid #D7DBDD;
-    background-color: #FCFDFD;
-    padding:10px;
-}
-.sidebar__section{
-
-}
-.sidebar__item{
-    cursor:pointer;
-    padding:8px 10px;
-    font-size:18px;
-}
-.sidebar__item .btn-sidebar:hover{
-    background-color: #4CAF50;
-    color:white;
-    border-radius:4px;
-}
-.sidebar button{
-    color:black;
-}
-.btn{
-   
-    cursor:pointer;
-    outline: none;
-    border:none;
-    color:black;
-    width:100%;
-}
-.btn-sidebar{
-    display: flex;
-    justify-content: flex-start;
-    background-color: #C4C4C4;
-    padding:10px;
-}
-.content{
-    display:flex;
-    flex-direction: column;
-    justify-content: start;
-    padding:10px;
-    width:90%;
-    background-color: #ffc8002c ;
-}
-.content__section{
-
-}
-.content__item {
-    
-}
-.posts__body{
-    position:relative;
-    background-color:#ACA9A9;
-    width:80%;
-    max-width:1920px;
-    max-height:1940px;
-    margin:auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-.post__title{
-    display:flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding:10px;
-    border-bottom: 1px solid black;
-}
-.post__title__link{
-    display:block;
-    position:relative;
-    text-decoration: none;
-    color:black;
-    white-space: nowrap;
-     
-}
-.post__title__link img{
-    display: inline-block;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    vertical-align: middle;
-    
-}
-.post__title__link span{
-    display: inline-block;
-    margin-left: 12px;
-    vertical-align: middle;
-}
-.post__photo{
-    display: block;
-    position: relative;
-    
-}
-.post__photo img{
-   width:100%;
-   vertical-align: middle;
-}
-.post__footer{
-    
-}
-.post__footer__item{
-    display:flex;
-    flex-wrap: wrap;
-     
-}
-.btn__post__footer{
-    padding:10px;
-    border-left:1px solid #adb0b3;
-    border-radius: 0%;
-    transition: all 0.3s ease 0s;
-}
-.btn__post__footer:first-child{
-    background-color:none;
-    border: none;
-}
- 
-.btn__post__footer:hover{
-    background-color:#2D8CFF;
-    color:white;
-    border: none;
-}
-
-.btn__wrapper{
-    display:flex;
-    flex:1 0;
-    padding:10px;
-}
+    /*sidebar start*/
+    .sidebar{
+        display:none;
+    }
+    .posts__body{
+        width:100%;
+    }
 
 
+}
