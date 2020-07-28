@@ -1,18 +1,22 @@
-##### Mandarin
-#### To start
+# Mandarin
+
+## To start
 - Download and install last version of .Net (3.1) SDK
 - Run in visual studio code terminal 'dotnet new blazorwasm -ho -p -n Mandarin'
-#### Frontend
+
+### Frontend
 - next pages
 
-#### Backend 
-
+### Backend 
 - Create, Read, update, delete functions
-### Models:
+
+#### Models:
 - user, post, follower
-### Controllers
+
+#### Controllers
 - users, posts, followers
-### Views
+
+#### Views
 - Users: create, remove, update, delete
 - Posts: create, remove, update, delete 
 - Followers: follow, unfollow
